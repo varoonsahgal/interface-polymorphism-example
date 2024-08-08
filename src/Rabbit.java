@@ -13,6 +13,13 @@ public class Rabbit implements IMovable{
 
 // getters and setters not shown
 
+
+    @Override
+    public void getSize() {
+       // IMovable.super.getSize();
+        System.out.println("in ");
+    }
+
     public Point move(int xUnits, int yUnits) {
 
         // the turtle moves the number of units specified in

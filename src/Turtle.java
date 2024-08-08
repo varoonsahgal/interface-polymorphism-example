@@ -42,4 +42,13 @@ public class Turtle implements IMovable, Interface2 {
         return name;
     }
 
+    @Override
+    public void getSize() {
+        IMovable.super.getSize(); // normally we use super in inheritance context
+        // but here we are using it to call the default implementation of
+        // getSize in IMovable and Interface2...
+        Interface2.super.getSize();
+        System.out.println("test");
+    }
+
 }
